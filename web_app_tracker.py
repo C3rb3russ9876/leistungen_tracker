@@ -1,7 +1,5 @@
 import streamlit as st
 from lern_tracker import daten_speichern, auswertung_lernzeit, auswertung_note, csv_datei
-import csv
-from pathlib import Path
 import pandas as pd
 
 
@@ -69,8 +67,10 @@ def regressionsmodell_auswertung(modell, mae, r2_wert):
             st.write(f"Die vorhergesagte Note für eine Lernzeit von {lernzeit_input} Stunden beträgt: {vorhersage:.2f}")
 
     st.warning("Bitte beachten Sie, dass das Modell nur eine lineare Regression ist und die Vorhersagen nicht immer genau sein können.")
-    st.warning("Die Genauigkeit des Modells hängt stark von der Qualität und Quantität der Daten ab. Je mehr Datenpunkte vorhanden sind, desto besser kann das Modell Vorhersagen treffen.")
-
+    st.warning(
+        "Die Vorhersagequalität hängt von der Menge, Qualität "
+        "und Relevanz der Daten ab."
+    )
 def main():
     """Hauptfunktion, die die Dateneingabe, Auswertung und das Regressionsmodell trainiert und steuert."""
     if csv_datei.exists():
