@@ -91,7 +91,7 @@ Das Modell nutzt die Lernzeit und das Fach als Eingabemerkmale. Fachnamen werden
 80% der Einträge dienen zum Training, 20% zur Bewertung. `random_state=17` macht die Aufteilung bei unveränderten Daten reproduzierbar. Das Modell wird im entsprechenden App-Zweig mit den aktuellen Daten neu trainiert.
 
 - **MAE:** Durchschnittliche absolute Abweichung zwischen vorhergesagten und tatsächlichen Noten. Ein MAE von 0.4 bedeutet eine durchschnittliche Abweichung von 0.4 Notenpunkten im Testsatz.
-- **R²:** Bestimmtheitsmass. Ein Wert von 1 bedeutet eine perfekte Vorhersage im Testsatz, 0 entspricht hinsichtlich des quadratischen Fehlers einer Vorhersage mit dessen Mittelwert. Negative Werte sind möglich. R² ist keine prozentuale Genauigkeit.
+- **R2:** Bestimmtheitsmass. Ein Wert von 1 bedeutet eine perfekte Vorhersage im Testsatz, 0 entspricht hinsichtlich des quadratischen Fehlers einer Vorhersage mit dessen Mittelwert. Negative Werte sind möglich. R² ist keine prozentuale Genauigkeit.
 
 ## Grenzen
 
