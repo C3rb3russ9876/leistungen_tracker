@@ -64,17 +64,7 @@ Je nach Installation lautet der Python-Befehl unter Linux oder macOS `python3`.
 python -m pip install streamlit pandas matplotlib seaborn scikit-learn
 ```
 
-### 3. CSV-Pfad prüfen
-
-Damit die CSV neben den Python-Dateien gespeichert wird, verwende in `lern_tracker.py` folgende Definition statt eines persönlichen Windows-Pfads:
-
-```python
-csv_datei = Path(__file__).resolve().parent / "leistungen.csv"
-```
-
-`Path` wird mit `from pathlib import Path` importiert. Eine CSV muss vor dem ersten Start nicht vorhanden sein.
-
-### 4. Anwendung starten
+### 3. Anwendung starten
 
 ```bash
 python -m streamlit run web_app_tracker.py
