@@ -1,0 +1,10 @@
+# Virtuelle Python-Umgebung
+.venv/
+venv/
+
+# Automatisch erzeugte Python-Dateien
+__pycache__/
+*.pyc
+
+# Persönliche Lernzeiten und Noten
+leistungen.csv
