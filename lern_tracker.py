@@ -28,7 +28,7 @@ def daten_speichern(daten, spalten, csv_datei) -> None:
 
 def auswertung_lernzeit(csv_datei) -> None:
     """Erstellt eine Auswertung der durchschnittlichen Lernzeit und der Noten basierend auf den gespeicherten Daten."""
-    # Daten einlesen & aufbereiten
+    # Daten einlesen und aufbereiten
     df = pd.read_csv(csv_datei)
     df["Datum"] = pd.to_datetime(df["Datum"], format="%d.%m.%Y")
 
@@ -73,7 +73,7 @@ def auswertung_lernzeit(csv_datei) -> None:
 
 def auswertung_note(csv_datei, fach_eingabe) -> None:
     """Erstellt eine Auswertung der Notenentwicklung für ein bestimmtes Fach basierend auf den gespeicherten Daten."""
-    # Daten einlesen & aufbereiten
+    # Daten einlesen und aufbereiten
     df = pd.read_csv(csv_datei)
     df["Datum"] = pd.to_datetime(df["Datum"], format="%d.%m.%Y")
 
